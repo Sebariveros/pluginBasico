@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/reservasalas/db" VERSION="20140519" COMMENT="XMLDB file for Moodle local/reservasalas"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="solicitudes" COMMENT="solicitudes ">
+      <FIELDS>
+        <FIELD NAME="id_usuario" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="id_solicitud" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" />
+      <FIELD NAME="id_secretario" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+      <FIELD NAME="comentario" TYPE="text" LENGTH="200" NOTNULL="false" SEQUENCE="false"/>
+       <FIELD NAME="respuesta" TYPE="text" LENGTH="200" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id_solicitud"/>
+      </KEYS>
+    </TABLE>
+</TABLES>
